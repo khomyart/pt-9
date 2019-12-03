@@ -1,0 +1,117 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bdbg{
+    border: 2px solid red;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(0, 1, 37, 0.308), rgba(255, 0, 0, 0.205));
+    overflow: hidden;
+}
+
+.video-bg {
+    position: absolute;
+    z-index: -1;
+    min-width: 110%;
+    min-height: 100%;
+    top:50%;
+    left:50%;
+    transform: translate(-52%, -50%);
+}
+
+.index_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(1445deg) scale(450);
+    transition: all 1.5s ease-in;
+}
+
+.auth_form {
+    width:30%;
+}
+
+.inputs_and_btns_golder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 110%);
+
+}
+
+.inputs {
+    width: 40%;
+    height: 2rem;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px black;
+    border: 2px solid rgba(0, 0, 0, 0.555);
+    background-color: rgba(0, 0, 0, 0.294);
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.inputs:focus {
+    box-shadow:
+    0 0 15px 7px #fff,  /* inner white */
+    0 0 25px 15px #f0f, /* middle magenta */
+    0 0 35px 20px #0ff; /* outer cyan */
+}
+
+.button_holder {
+    width: 40%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    width: 47%;
+    padding: 0px;
+    height: 2rem;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 0.5px 0.5px black;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.button:hover {
+    box-shadow:
+    0 0 7px 3px #fff,  /* inner white */
+    0 0 13px 7px #f0f, /* middle magenta */
+    0 0 15px 10px #0ff; /* outer cyan */
+}
