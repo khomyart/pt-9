@@ -1,13 +1,12 @@
 <?php
     if(isset($method["registration"])) {
         $query = "SELECT `login` FROM `users` WHERE `login` LIKE ?;";
-        $feedback = "This login already registered";
+        $feedback = "This username already registered";
         fieldValueExistanceChecker($query, 'login', $feedback);
 
         $query = "SELECT `display_name` FROM `users` WHERE `display_name` LIKE ?;";
         $feedback = "This display name already registered";
         fieldValueExistanceChecker($query, 'display_name', $feedback);
-
     
         if(empty($feedbackData)) {
             $query = "INSERT INTO `users`(`login`, `pwd`, `display_name`) VALUES (?,?,?);";

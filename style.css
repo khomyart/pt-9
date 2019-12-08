@@ -137,12 +137,14 @@ body {
 }
 
 .valid-text {
+    text-shadow: 1px 1px 1px #000000;
     font-size: 1.3rem;
     margin: -15px 0px 10px 0px;
     color: #3CFF00;
 }
 
 .invalid-text {
+    text-shadow: 1px 1px 1px #000000;
     font-size: 1.3rem;
     margin: -15px 0px 10px 0px;
     color: #DC1D1D;
